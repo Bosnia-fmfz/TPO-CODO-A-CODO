@@ -1,38 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Solo para desarrollo. Evita que el navegador cachee archivos. -->
-	<meta http-equiv="Cache-Control" content="no-cache">
+<html lang="es">
 
-    <link rel="stylesheet" href="/css/styles.css">
-    <title>Document</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Solo para desarrollo. Evita que el navegador cachee archivos. -->
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+  <title>En vivo en ARG - Concacto</title>
 </head>
+
 <body>
-    <header>
-        <h1>Título contacto</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="bandas.html">Bandas</a>
-            <a href="acerca de.html">Acerca de</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <article>
-                
-            </article>
-        </section>
-    </main>
-    <footer>
-        <h5>Nuestras redes</h5>
-        <a href="https://www.facebook.com"><i>Facebook</i></a>
-        <a href="https://www.instagram.com"><i>Instagram</i></a>
-        <a href="https://www.youtube.com"><i>Youtube</i></a>
-        <a href="https://twitter.com/home"><i>Twitter</i></a>        
-    </footer>
+  <header id="idHeader"></header>
+  <main id="main-contacto">
+    <section>
+      <article>
+        <form>
+          <div class="form-group">
+            <label for="contacto-nombre-apellido">Nombre y Apellido</label>
+            <input type="text" class="form-control" id="contacto-nombre-apellido" name="nombre" placeholder="Ingrese su nombre.." onkeyup='validarNombre()'>
+            <span class='mensaje-error' id='nombre-error'></span>
+          </div>
+
+          <div class="form-group">
+            <label for="contacto-telefono">Teléfono</label>
+            <input type="tel" class="form-control" id="contacto-telefono" name="telefono" placeholder="Ej: 0111541231234" onkeyup='validarTelefono()'>
+            <span class='mensaje-error' id='phone-error'></span>
+          </div>
+
+          <div class="form-group">
+            <label for="contacto-email">Email</label>
+            <input type="email" class="form-control" id="contacto-email" name="email" placeholder="Ingrese Email" onkeyup='validarEmail()'>
+            <span class='mensaje-error' id='email-error'></span>
+          </div>
+
+          <div class="form-group">
+            <label for='contacto-texto'>Ingrese su mensaje</label>
+            <textarea class="form-control" rows="5" id='contacto-texto' name='texto'
+              placeholder="Ingrese un breve mensaje" onkeyup='validarTexto()'></textarea>
+            <span class='mensaje-error' id='texto-error'></span>
+          </div>
+
+          <button onclick='return validarFormulario()' class="btn btn-default">Submit</button>
+          <span class='mensaje-error' id='submit-error'></span>
+        </form>
+      </article>
+    </section>
+  </main>
+  <footer id="idFooter"></footer>
+  
+  <script type="text/javascript" src="../js/app.js"></script>
 </body>
 </html>

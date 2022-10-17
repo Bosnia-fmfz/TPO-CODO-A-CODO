@@ -32,6 +32,15 @@ header {
     align-content: center;
 }
 
+#main-contacto {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-content: center;
+}
+
 section {
     width: 50%;
     background-color: lightgray;

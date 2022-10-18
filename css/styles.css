@@ -4,16 +4,31 @@
 
 /* BODY */
 body {
+    background: rgb(230,230,230);
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
     display: grid;
     grid-template-areas:
-        /*6 columnas y 3 filas*/
-        'header header header header header header'
-        'main main main main main main'
-        'footer footer footer footer footer footer';
+        /*4 columnas y 3 filas*/
+        'header header header header'
+        'main main main main'
+        'banda-1 banda-2 banda-3 banda-4'
+        'footer footer footer footer';
     grid-gap: 10px;
     background-color:  #f1f1f1;
     padding: 10px;
 }
+
+.banda-1 {grid-area: banda-1;}
+
+.banda-2 {grid-area: banda-2;}
+
+.banda-3 {grid-area: banda-3;}
+
+.banda-4 {grid-area: banda-4;}
 
 /* HEADER */
 header {
@@ -58,4 +73,75 @@ footer {
     text-align: center;
     background: #ddd;
     margin-top: 20px;
-  }
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        grid-template-areas:
+                'header header header header'
+                'main main main main'
+                'banda-1 banda-1 banda-2 banda-2'
+                'main main main main'
+                'banda-3 banda-3 banda-4 banda-4'
+                'footer footer footer footer';
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main-container {
+        grid-template-areas:
+                'header header header header'
+                'banda-1 banda-1 banda-1 banda-1'
+                'banda-2 banda-2 banda-2 banda-2'
+                'banda-3 banda-3 banda-3 banda-3'
+                'banda-4 banda-4 banda-4 banda-4'
+                'footer footer footer footer';
+    }
+}
+
+.btn-container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.btn-enviar {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+  
+.btn-enviar span {
+    position: relative;
+    z-index: 2;
+}
+  
+.btn-enviar:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #0099ff;
+    transition: all .35s;
+}
+
+.btn-enviar:hover {
+    color: #fff;
+}
+  
+.btn-enviar:hover:after {
+    width: 100%;
+}

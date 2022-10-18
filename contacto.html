@@ -18,7 +18,7 @@
   <main id="main-contacto">
     <section>
       <article>
-        <form>
+        <form class="form-container">
           <div class="form-group">
             <label for="contacto-nombre-apellido">Nombre y Apellido</label>
             <input type="text" class="form-control" id="contacto-nombre-apellido" name="nombre" placeholder="Ingrese su nombre.." onkeyup='validarNombre()'>
@@ -44,14 +44,16 @@
             <span class='mensaje-error' id='texto-error'></span>
           </div>
 
-          <button onclick='return validarFormulario()' class="btn btn-default">Submit</button>
-          <span class='mensaje-error' id='submit-error'></span>
+          <div class="form-group btn-container">
+            <a onclick='return validarFormulario()' class="btn-enviar"><span>Enviar</span></a>
+            <span class='mensaje-error' id='submit-error'></span>
+          </div>
         </form>
       </article>
     </section>
   </main>
   <footer id="idFooter"></footer>
   
-  <script type="text/javascript" src="../js/app.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

@@ -4,7 +4,8 @@
 
 /* BODY */
 body {
-    background: rgb(230,230,230);
+    margin: 1px;
+    background: rgb(180, 168, 168);
     color: #000;
     font-family: 'Roboto', sans-serif;
 }
@@ -138,6 +139,17 @@ section {
     footer{
         text-align: center;
         background-color: rgb(183, 183, 196);
+    }
+
+    .text-gen {
+        color: rgb(183, 183, 196);
+        background-color: rgba(0, 0, 0, 0.87);        
+        padding: 50px 20px 40px 20px;
+    }
+
+    #sec-acerca{
+        background-color: rgba(212, 23, 23, 0.836);
+        padding: 10px;
     }
 }
 

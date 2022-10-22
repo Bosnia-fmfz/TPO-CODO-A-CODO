@@ -8,18 +8,15 @@
 	<meta http-equiv="Cache-Control" content="no-cache">
 
     <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+
+    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+    
     <title>En vivo en ARG</title>
 </head>
 <body>
-    <header>
-        <h1>Título bandas</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="bandas.html">Bandas</a>
-            <a href="acerca de.html">Acerca de</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-    </header>
+    <header id="idHeader"></header>
     <!-- <main id="main-bandas">
         <section>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ifiv-_slJgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>IRON MAIDEN</iframe>
@@ -38,18 +35,33 @@
         <div class="contenido-ppal">
             <section class="secciones">
                 <article>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ifiv-_slJgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vL2C3jdum7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div>
+                    <div class="carrusel">
+                        <div class="grande">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ifiv-_slJgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe"></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/vL2C3jdum7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe"></iframe>
+                        </div>
+                        <div class="puntos">
+                            <div class="punto activo"></div>
+                            <div class="punto"></div>
+                        </div>                       
+                    </div>
+                    <div class="text-gen">
                         <h3>IRON MAIDEN EN ARGENTINA</h3>
                         <p>La banda británica de heavy metal Iron Maiden conformada por Steve Harris (bajo), Dave Murray (guitarra), Janick Gers (guitarra), Nicko McBrian (batería), Adam Smith (guitarra y coros) y Bruce Dickinson (voz y piano) nos visitó en reiteradas oportunidades, comenzando en el año 1992 con la gira "Fear of the Dark Tour" y cerrando sus visitas en el año 2019 con la gira "Legacy of the Beast Tour".  </p>
                     </div>
                 </article>
-
                 <article>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GCC8gWTOkEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sj2j9L3FML4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div>
+                    <div class="carrusel">
+                        <div class="grande">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/GCC8gWTOkEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/sj2j9L3FML4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="puntos">
+                            <div class="punto activo"></div>
+                            <div class="punto"></div>
+                        </div>
+                    </div>                    
+                    <div class="text-gen">
                         <h3>AC/DC EN ARGENTINA </h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis debitis cupiditate eum expedita
                             a tempora eligendi ut quibusdam, eaque, iusto libero quaerat laborum quisquam doloremque
@@ -58,12 +70,19 @@
                             incidunt voluptas assumenda dolorum, iusto maiores fugit aliquam quisquam perferendis vero
                             quia voluptatibus quasi. Numquam ea laborum rem?</p>
                     </div>
-                </article>
-                
+                </article>                    
                 <article>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ms2-HJCJKO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VV8fusbyS-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div>
+                    <div class="carrusel">
+                        <div class="grande">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ms2-HJCJKO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VV8fusbyS-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="puntos">
+                            <div class="punto activo"></div>
+                            <div class="punto"></div>
+                        </div>  
+                    </div>                                      
+                    <div class="text-gen">
                         <h3>COLDPLAY EN ARGENTINA</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis debitis cupiditate eum expedita
                             a tempora eligendi ut quibusdam, eaque, iusto libero quaerat laborum quisquam doloremque
@@ -73,11 +92,18 @@
                             quia voluptatibus quasi. Numquam ea laborum rem?</p>
                     </div>
                 </article>
-
                 <article>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AkVYK9x0M1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nZCGfwLTWu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div>
+                    <div class="carrusel">
+                        <div class="grande">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/AkVYK9x0M1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/nZCGfwLTWu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="puntos">
+                            <div class="punto activo"></div>
+                            <div class="punto"></div>
+                        </div> 
+                    </div>                     
+                    <div class="text-gen">
                         <h3>U2 EN ARGENTINA</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis debitis cupiditate eum expedita
                             a tempora eligendi ut quibusdam, eaque, iusto libero quaerat laborum quisquam doloremque
@@ -86,17 +112,11 @@
                             incidunt voluptas assumenda dolorum, iusto maiores fugit aliquam quisquam perferendis vero
                             quia voluptatibus quasi. Numquam ea laborum rem?</p>
                     </div>
-                </article>
-            
+                </article>                
             </section>
         </div>
     </main>
-    <footer>
-        <h5>Nuestras redes</h5>
-        <a href="https://www.facebook.com"><i>Facebook</i></a>
-        <a href="https://www.instagram.com"><i>Instagram</i></a>
-        <a href="https://www.youtube.com"><i>Youtube</i></a>
-        <a href="https://twitter.com/home"><i>Twitter</i></a>        
-    </footer>   
+    <footer id="idFooter"></footer>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

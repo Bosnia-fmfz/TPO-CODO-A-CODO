@@ -99,16 +99,38 @@ document.getElementById("idHeader").innerHTML = `
 ***********************************************************/
 document.getElementById("idFooter").innerHTML = `
     <h4>Nuestras redes</h4>
-    <a class="redsoc" href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"
-        aria-hidden="true"></i></a>
-    <a class="redsoc" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"
-        aria-hidden="true"></i></a>
-    <a class="redsoc" href="https://ar.pinterest.com/" target="_blank"><i class="fa fa-pinterest"
-        aria-hidden="true"></i></a>
-    <a class="redsoc" href="https://www.instagram.com/?hl=es" target="_blank"><i class="fa fa-instagram"
-        aria-hidden="true"></i></a>
-    <a class="redsoc" href="https://www.linkedin.com/" target="_blank"><i
-        class="fa fa-linkedin" aria-hidden="true"></i></a>
-    <br>
+    <div>
+        <a class="redsoc" href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"
+            aria-hidden="true"></i></a>
+        <a class="redsoc" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"
+            aria-hidden="true"></i></a>
+        <a class="redsoc" href="https://ar.pinterest.com/" target="_blank"><i class="fa fa-pinterest"
+            aria-hidden="true"></i></a>
+        <a class="redsoc" href="https://www.instagram.com/?hl=es" target="_blank"><i class="fa fa-instagram"
+            aria-hidden="true"></i></a>
+        <a class="redsoc" href="https://www.linkedin.com/" target="_blank"><i
+            class="fa fa-linkedin" aria-hidden="true"></i></a>
+    </div>
     <a href="https://www.flaticon.com/free-icons/music" title="music icons">Music icons created by Freepik - Flaticon</a>
 `
+
+/***********************************************************
+************************** CARRUSEL **************************
+***********************************************************/
+
+// const grande = document.querySelector('.grande')
+// const punto = document.querySelectorAll('.punto')
+
+// punto.forEach((cadaPunto, i)=>{
+//     punto[i].addEventListener('click',()=>{
+//         let posicion = 1
+//         let operacion = posicion * (-50)
+
+//         grande.style.transform = `translateX($(operacion)%)`
+
+//         punto.forEach((cadaPunto, 1)=>{
+//             punto[i].classList.remove('activo')
+//         })
+//         punto[i].classList.add('activo')
+//     })
+// })

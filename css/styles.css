@@ -125,7 +125,7 @@ section {
 
     section{
         background-color: rgba(0, 0, 0, 0.87);
-        width: 90%;
+        width: 95%;
         margin: auto;
         margin-top: 5px;
         margin-bottom: 5px;
@@ -140,6 +140,22 @@ section {
         text-align: center;
         background-color: rgb(183, 183, 196);
     }
+    footer div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+
+    }
+    footer h4 {
+        font-size: 1rem;
+    }
+
+    footer i {
+        font-size: 1.5rem;
+        color: #000;
+    }
 
     .text-gen {
         color: rgb(183, 183, 196);
@@ -150,6 +166,56 @@ section {
     #sec-acerca{
         background-color: rgba(212, 23, 23, 0.836);
         padding: 10px;
+    }
+
+    /* bandas */
+
+    /* carrusel */
+
+    .carrusel{
+        width: 100%;
+        max-width: 120em;
+        overflow: hidden;
+    }
+
+    .carrusel .grande{
+        width: 200%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        transition: all .5s ease;
+        transform: translate(0%);
+    }
+
+    .carrusel .iframe{
+        width: 50%;
+        min-height: 10vh;
+    }
+
+    .carrusel .puntos{
+        background-color: rgb(42, 42, 71);
+        border-radius: 30px;
+        width: 60%;
+        margin: auto;
+        /* margin: 1em 0 0; */
+        /* padding: .4em; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carrusel .punto{
+        background-color: crimson;
+        border-radius: 100%;
+        width: 1em;
+        height: 1em;
+        margin: 3px 3px;
+    }
+
+    .carrusel .punto.activo{
+        background-color: orangered;
     }
 }
 

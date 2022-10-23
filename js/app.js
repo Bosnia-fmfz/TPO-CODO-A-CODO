@@ -86,7 +86,7 @@ function mostrarAviso(mensaje, elemento, color) {
 ************************** HEADER **************************
 ***********************************************************/
 document.getElementById("idHeader").innerHTML = `
-<h1>Main Home</h1>
+<h1>EN VIVO EN ARGENTINA</h1>
 <nav>
     <a href="index.html">Home</a>
     <a href="bandas.html">Bandas</a>

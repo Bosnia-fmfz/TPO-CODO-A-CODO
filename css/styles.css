@@ -76,18 +76,11 @@ section {
     margin-top: 20px;
 }*/
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 451px) {
     .main-container {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(3, auto);  
-             /* grid-template-areas:
-                'header header header header'
-                'main main main main'
-                'banda-1 banda-1 banda-2 banda-2'
-                'main main main main'
-                'banda-3 banda-3 banda-4 banda-4'
-                'footer footer footer footer'; */
+            grid-template-rows: repeat(3, auto);
 
     }
     header{
@@ -170,114 +163,9 @@ section {
         background-color: rgba(212, 23, 23, 0.836);
         padding: 10px;
     }
-
-    /* bandas */
-
-    /* carrusel */
-
-    .carrusel{
-        width: 100%;
-        max-width: 120em;
-        overflow: hidden;
-    }
-
-    .carrusel .grande{
-        width: 200%;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-
-        transition: all .5s ease;
-        transform: translate(0%);
-    }
-
-    .carrusel .iframe{
-        width: 50%;
-        min-height: 10vh;
-    }
-
-    .carrusel .puntos{
-        background-color: rgb(42, 42, 71);
-        border-radius: 30px;
-        width: 60%;
-        margin: auto;
-        /* margin: 1em 0 0; */
-        /* padding: .4em; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .carrusel .punto{
-        background-color: crimson;
-        border-radius: 100%;
-        width: 1em;
-        height: 1em;
-        margin: 3px 3px;
-    }
-
-    .carrusel .punto.activo{
-        background-color: orangered;
-    }
 }
-
-.btn-container {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-  
-.btn-enviar {
-    display: flex;
-    width: 200px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 18px;
-    font-family: sans-serif;
-    text-decoration: none;
-    color: #333;
-    border: 2px solid #333;
-    letter-spacing: 2px;
-    text-align: center;
-    position: relative;
-    transition: all .35s;
-}
-  
-.btn-enviar span {
-    position: relative;
-    z-index: 2;
-}
-  
-.btn-enviar:after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #0099ff;
-    transition: all .35s;
-}
-
-.btn-enviar:hover {
-    color: #fff;
-}
-  
-.btn-enviar:hover:after {
-    width: 100%;
-}
-
-
-
 
 @media screen and (max-width: 450px) {
-    .main-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, auto);             
-    }
 
     header{
         text-align: center;
@@ -356,53 +244,51 @@ section {
 
     /* bandas */
 
-    /* carrusel */
+    /* SLIDER */
 
-    .carrusel{
-        width: 100%;
-        max-width: 120em;
-        overflow: hidden;
+    .slider-contenedor, .slider-contenedor1, .slider-contenedor2, .slider-contenedor3{
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
-    .carrusel .grande{
-        width: 200%;
+    .slider-body, .slider-body1, .slider-body2, .slider-body3{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 1;
+        opacity: 0;
+        pointer-events: none;
+        align-items: center;
+        transition: opacity 1.5s;
+    }
+
+    .slider-body-show, .slider-body-show1, .slider-body-show2, .slider-body-show3{
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+    .slider-iframe{
+        width: 100%;
+    }
+
+    .slider-control{
         display: flex;
-        flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
-
-        transition: all .5s ease;
-        transform: translate(0%);
-    }
-
-    .carrusel .iframe{
-        width: 50%;
-        min-height: 10vh;
-    }
-
-    .carrusel .puntos{
         background-color: rgb(42, 42, 71);
-        border-radius: 30px;
-        width: 60%;
-        margin: auto;
-        /* margin: 1em 0 0; */
-        /* padding: .4em; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 10px;
     }
-
-    .carrusel .punto{
+    .slider-arrow{
+        cursor: pointer;
         background-color: crimson;
-        border-radius: 100%;
-        width: 1em;
-        height: 1em;
-        margin: 3px 3px;
+        border-radius: 50% 0 0 50%;
+        padding: 10px;
     }
 
-    .carrusel .punto.activo{
+    .slider-arrow:nth-of-type(2){
+        justify-self: end;
         background-color: orangered;
-    }
+        border-radius: 0 50% 50% 0;
+    }    
 }
 
 .btn-container {

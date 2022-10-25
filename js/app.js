@@ -90,10 +90,35 @@ document.getElementById("idHeader").innerHTML = `
 <nav>
     <a href="index.html">Home</a>
     <a href="bandas.html">Bandas</a>
-    <a href="acerca de.html">Acerca de</a>
+    <a href="acerca de.html">Opiniones</a>
     <a href="contacto.html">Contacto</a>
 </nav>
 `;
+/*api*/
+let url = 'https://jsonplaceholder.typicode.com/comments'
+fetch(url)
+    .then(response => response.json())
+    .then(data => mostrarData(data))
+    .catch(error => console.log("Ocurrió un error", error))
+
+const mostrarData = (data) => {
+    console.log(data)
+    let comment = ''
+    for (let i = 0; i < 30; i++) {
+        comment += `<tr> 
+            <td>${data[i].name}</td>
+            <td>${data[i].body}</td>
+            </tr>`
+    }
+
+    document.getElementById("data").innerHTML = comment
+}
+
+
+
+
+
+
 /***********************************************************
 ************************** FOOTER **************************
 ***********************************************************/
@@ -218,24 +243,6 @@ document.getElementById("idFooter").innerHTML = `
     }
 })();
 
-let url = 'https://jsonplaceholder.typicode.com/comments'
-fetch(url)
-    .then(response => response.json())
-    .then(data => mostrarData(data))
-    .catch(error => console.log("Ocurrió un error", error))
 
-const mostrarData = (data) => {
-    console.log(data)
-    let comment = ''
-    for (let i = 0; i < 30; i++) {
-        // body = body + ...
-        comment += `<tr> 
-            <td>${data[i].name}</td>
-            <td>${data[i].body}</td>
-            </tr>`
-    }
-
-    document.getElementById("data").innerHTML = comment
-}
 
 

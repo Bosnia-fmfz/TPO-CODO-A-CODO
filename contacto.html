@@ -16,39 +16,42 @@
 <body>
   <header id="idHeader"></header>
   <main id="main-contacto">
-    <section>
-      <article>
-        <form class="form-container">
-          <div class="form-group">
-            <label for="contacto-nombre-apellido">Nombre y Apellido</label>
-            <input type="text" class="form-control" id="contacto-nombre-apellido" name="nombre" placeholder="Ingrese su nombre.." onkeyup='validarNombre()'>
-            <span class='mensaje-error' id='nombre-error'></span>
-          </div>
-
-          <div class="form-group">
-            <label for="contacto-telefono">Teléfono</label>
-            <input type="tel" class="form-control" id="contacto-telefono" name="telefono" placeholder="Ej: 0111541231234" onkeyup='validarTelefono()'>
-            <span class='mensaje-error' id='phone-error'></span>
-          </div>
-
-          <div class="form-group">
-            <label for="contacto-email">Email</label>
-            <input type="email" class="form-control" id="contacto-email" name="email" placeholder="Ingrese Email" onkeyup='validarEmail()'>
-            <span class='mensaje-error' id='email-error'></span>
-          </div>
-
-          <div class="form-group">
-            <label for='contacto-texto'>Ingrese su mensaje</label>
-            <textarea class="form-control" rows="5" id='contacto-texto' name='texto'
-              placeholder="Ingrese un breve mensaje" onkeyup='validarTexto()'></textarea>
-            <span class='mensaje-error' id='texto-error'></span>
-          </div>
-
-          <div class="form-group btn-container">
-            <a onclick='return validarFormulario()' class="btn-enviar"><span>Enviar</span></a>
-            <span class='mensaje-error' id='submit-error'></span>
-          </div>
-        </form>
+    <section class="secciones">
+      <article class="form-article">
+        <div class="form-container">
+          <form class="form-body">
+            <div class="form-group">
+              <label for="contacto-nombre-apellido">Nombre y Apellido</label>
+              <input type="text" class="form-control" id="contacto-nombre-apellido" name="nombre" placeholder="Ingrese su nombre.." onkeyup='validarNombre()'>
+              <span class='mensaje-error' id='nombre-error'></span>
+            </div>
+  
+            <div class="form-group">
+              <label for="contacto-telefono">Teléfono</label>
+              <input type="tel" class="form-control" id="contacto-telefono" name="telefono" placeholder="Ej: 0111541231234" onkeyup='validarTelefono()'>
+              <span class='mensaje-error' id='phone-error'></span>
+            </div>
+  
+            <div class="form-group">
+              <label for="contacto-email">Email</label>
+              <input type="email" class="form-control" id="contacto-email" name="email" placeholder="Ingrese Email" onkeyup='validarEmail()'>
+              <span class='mensaje-error' id='email-error'></span>
+            </div>
+  
+            <div class="form-group">
+              <label for='contacto-texto'>Ingrese su mensaje</label>
+              <textarea class="form-control" rows="15" id='contacto-texto' name='texto'
+                placeholder="Ingrese un breve mensaje" onkeyup='validarTexto()'></textarea>
+              <span class='mensaje-error' id='texto-error'></span>
+            </div>
+  
+            <!-- <div class="form-group btn-container"> -->
+            <div class="form-btn">
+              <a onclick='return validarFormulario()' class="btn-enviar"><span class="span-enviar">Enviar</span></a>
+              <span class='mensaje-error' id='submit-error'></span>
+            </div>
+          </form>
+        </div>
       </article>
     </section>
   </main>
